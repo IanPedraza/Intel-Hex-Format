@@ -10,9 +10,12 @@ public class FileManager {
     public static boolean saveArray(ArrayList<String> data, String path) {
         try {
             FileWriter writer = new FileWriter(path); 
-        
-            for(String item: data) {
-                writer.write(item+"\n");
+            int size =  data.size();
+            
+            for (int i = 0; i < size; i++) {
+                String item = data.get(i);
+                item += (i == size - 1? "" : "\n");
+                writer.write(item);
             }
 
             writer.close();
