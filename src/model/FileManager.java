@@ -17,7 +17,7 @@ public class FileManager {
 
             writer.close();
 
-            getDesktop().edit(new File(path));
+            getDesktop().open(new File("data"));
             
             return true;
         } catch (Exception e) {

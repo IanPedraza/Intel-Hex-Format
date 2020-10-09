@@ -59,7 +59,7 @@ public class IntelFormat {
                 index++;
             }   
             
-            FileManager.saveArray(data, "data/output.txt");            
+            FileManager.saveArray(data, "data/output.hex");            
             return true;
         } catch (Exception ex) {
             System.out.println("Error al abrir archivo: Formato de archivo inválido");
